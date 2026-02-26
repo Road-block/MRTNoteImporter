@@ -1,10 +1,10 @@
-## Interface: 50503,50500
+## Interface: 50503
 ## Title: MRTNoteImporter
 ## Author: David Groves
 ## X-Maintenance: Road-block
 ## Notes: Imports notes into Method Raid Tools from a single JSON document
 ## DefaultState: enabled
-## Version: 1.0.5
+## Version: 1.0.6
 ## X-License: MIT
 
 Libs/LibStub/LibStub.lua

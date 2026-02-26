@@ -6,7 +6,7 @@ Description: A library to encode and decode Base64 strings
 License: MIT
 ]]
 
-local LibBase64 = LibStub:NewLibrary("LibBase64-1.0", 1)
+local LibBase64 = LibStub:NewLibrary("LibBase64-1.0", 2)
 
 if not LibBase64 then
     return
@@ -133,7 +133,7 @@ function LibBase64:Decode(text)
             local num = byteToNum[byte]
             if not num then
                 for i = 1, #t2 do
-                    t2[k] = nil
+                    t2[i] = nil
                 end
                 
                 error(("Bad argument #1 to `Decode'. Received an invalid char: %q"):format(text:sub(i, i)), 2)
